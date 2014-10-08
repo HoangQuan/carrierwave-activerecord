@@ -9,7 +9,7 @@ module CarrierWave
         alias_method    :delete, :destroy
         alias_attribute :read, :data
 
-        attr_accessible :identifier,
+        attr_protected :identifier,
                         :original_filename,
                         :content_type,
                         :size,
